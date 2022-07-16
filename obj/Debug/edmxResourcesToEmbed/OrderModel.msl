@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model5StoreContainer" CdmEntityContainer="Entities5">
+    <EntitySetMapping Name="tblAdmins">
+      <EntityTypeMapping TypeName="Model5.tblAdmin">
+        <MappingFragment StoreEntitySet="tblAdmin">
+          <ScalarProperty Name="admin_Id" ColumnName="admin_Id" />
+          <ScalarProperty Name="admin_email" ColumnName="admin_email" />
+          <ScalarProperty Name="admin_password" ColumnName="admin_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBookingDetails">
+      <EntityTypeMapping TypeName="Model5.tblBookingDetail">
+        <MappingFragment StoreEntitySet="tblBookingDetails">
+          <ScalarProperty Name="book_Id" ColumnName="book_Id" />
+          <ScalarProperty Name="book_date" ColumnName="book_date" />
+          <ScalarProperty Name="book_time" ColumnName="book_time" />
+          <ScalarProperty Name="user_book_id" ColumnName="user_book_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBookings">
+      <EntityTypeMapping TypeName="Model5.tblBooking">
+        <MappingFragment StoreEntitySet="tblBookings">
+          <ScalarProperty Name="booking_Id" ColumnName="booking_Id" />
+          <ScalarProperty Name="booking_date" ColumnName="booking_date" />
+          <ScalarProperty Name="booking_time" ColumnName="booking_time" />
+          <ScalarProperty Name="user_book_id" ColumnName="user_book_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCoconuts">
+      <EntityTypeMapping TypeName="Model5.tblCoconut">
+        <MappingFragment StoreEntitySet="tblCoconut">
+          <ScalarProperty Name="coconut_Id" ColumnName="coconut_Id" />
+          <ScalarProperty Name="total_coconut" ColumnName="total_coconut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOrders">
+      <EntityTypeMapping TypeName="Model5.tblOrder">
+        <MappingFragment StoreEntitySet="tblOrder">
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="cust_order_id" ColumnName="cust_order_id" />
+          <ScalarProperty Name="number_order" ColumnName="number_order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="Model5.tblUser">
+        <MappingFragment StoreEntitySet="tblUsers">
+          <ScalarProperty Name="cust_id" ColumnName="cust_id" />
+          <ScalarProperty Name="cust_name" ColumnName="cust_name" />
+          <ScalarProperty Name="cust_address" ColumnName="cust_address" />
+          <ScalarProperty Name="cust_location" ColumnName="cust_location" />
+          <ScalarProperty Name="cust_mobile" ColumnName="cust_mobile" />
+          <ScalarProperty Name="cust_email" ColumnName="cust_email" />
+          <ScalarProperty Name="cust_pass" ColumnName="cust_pass" />
+          <ScalarProperty Name="cust_cpass" ColumnName="cust_cpass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
